@@ -49,6 +49,7 @@ enum output_method
   output_x_window,
   output_msdos_raw,
   output_w32,
+  output_mac,
   output_ns
 };
 
