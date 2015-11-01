@@ -1782,7 +1782,7 @@ if test "${HAVE_NS}" = yes; then
      INSTALL_ARCH_INDEP_EXTRA=
   fi
 
-  NS_OBJC_OBJ="nsterm.o nsfns.o nsmenu.o nsselect.o nsimage.o nsfont.o $macfont_file"
+  NS_OBJC_OBJ="nsterm.o nsfns.o nsmenu.o nsselect.o nsimage.o nsfont.o macim.o $macfont_file"
 fi
 CFLAGS="$tmp_CFLAGS"
 CPPFLAGS="$tmp_CPPFLAGS"
@@ -4876,7 +4876,7 @@ case "$opsys" in
    ## only costs about 1.5K of wasted binary space.
    headerpad_extra=1000
    if test "$HAVE_NS" = "yes"; then
-     libs_nsgui="-framework AppKit"
+     libs_nsgui="-framework AppKit -framework Carbon -framework Cocoa"
      if test "$NS_IMPL_COCOA" = "yes"; then
         libs_nsgui="$libs_nsgui -framework IOKit"
      fi
