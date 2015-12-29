@@ -10,7 +10,7 @@ Cocoa libraries.
 
 See the INSTALL file in this directory for compilation instructions.
 
-Requirements
+* Requirements
 ------------
 MacOS X 10.4 or later
 
@@ -35,3 +35,11 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with GNU Emacs.  If not, see <http://www.gnu.org/licenses/>.
+
+* Dependency
+
+- dbus
+- pkg-config
+- glib
+- gnutls
+- p11-kit
