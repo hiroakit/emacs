@@ -1,6 +1,7 @@
+* GNU Emacs
+
 Copyright (C) 2001-2015 Free Software Foundation, Inc.
 See the end of the file for license conditions.
-
 
 This directory tree holds version 24.5 of GNU Emacs, the extensible,
 customizable, self-documenting real-time display editor.
@@ -59,52 +60,41 @@ file from the current Emacs tree, containing only those files
 appropriate for distribution.  If you make extensive changes to Emacs,
 this script will help you distribute your version to others.
 
+** Directories
 There are several subdirectories:
 
-`src'       holds the C code for Emacs (the Emacs Lisp interpreter and
-            its primitives, the redisplay code, and some basic editing
-            functions).
-`lisp'      holds the Emacs Lisp code for Emacs (most everything else).
-`leim'      holds the original source files for the generated files
-            in lisp/leim.  These form the library of Emacs input methods,
-            required to type international characters that can't be
-            directly produced by your keyboard.
-`lib'       holds source code for libraries used by Emacs and its utilities
-`lib-src'   holds the source code for some utility programs for use by or
-            with Emacs, like movemail and etags.
-`etc'       holds miscellaneous architecture-independent data files Emacs
-            uses, like the tutorial text and tool bar images.
-            The contents of the `lisp', `leim', `info', and `doc'
-            subdirectories are architecture-independent too.
-`info'      holds the Info documentation tree for Emacs.
-`doc/emacs' holds the source code for the Emacs Manual.  If you modify the
+- src :: holds the C code for Emacs (the Emacs Lisp interpreter and its primitives, the redisplay code, and some basic editing functions).
+- lisp :: holds the Emacs Lisp code for Emacs (most everything else).
+- leim :: holds the original source files for the generated files in lisp/leim. 
+          These form the library of Emacs input methods, 
+          required to type international characters that can't be directly produced by your keyboard.
+- lib :: holds source code for libraries used by Emacs and its utilities
+- lib-src :: holds the source code for some utility programs for use by or with Emacs, like movemail and etags.
+- etc :: holds miscellaneous architecture-independent data files Emacs uses, like the tutorial text and tool bar images.
+         The contents of the `lisp', `leim', `info', and `doc' subdirectories are architecture-independent too.
+- info :: holds the Info documentation tree for Emacs.
+- doc/emacs :: holds the source code for the Emacs Manual.  If you modify the
             manual sources, you will need the `makeinfo' program to produce
             an updated manual.  `makeinfo' is part of the GNU Texinfo
             package; you need a suitably recent version of Texinfo.
-`doc/lispref'   holds the source code for the Emacs Lisp reference manual.
-`doc/lispintro' holds the source code for the Introduction to Programming
-                in Emacs Lisp manual.
-`msdos'     holds configuration files for compiling Emacs under MSDOG.
-`nextstep'  holds instructions and some other files for compiling the
-            Nextstep port of Emacs, for GNUstep and Mac OS X Cocoa.
-`nt'        holds various command files and documentation files that pertain
-            to building and running Emacs on Windows 9X/ME/NT/2000/XP.
-`test'      holds tests for various aspects of Emacs's functionality.
+- doc/lispref :: holds the source code for the Emacs Lisp reference manual.
+- doc/lispintro :: holds the source code for the Introduction to Programming in Emacs Lisp manual.
+- msdos :: holds configuration files for compiling Emacs under MSDOG.
+- nextstep :: holds instructions and some other files for compiling the Nextstep port of Emacs, for GNUstep and Mac OS X Cocoa.
+- nt :: holds various command files and documentation files that pertain to building and running Emacs on Windows 9X/ME/NT/2000/XP.
+- test :: holds tests for various aspects of Emacs's functionality.
 
-   Building Emacs on non-Posix platforms requires tools that aren't part
-of the standard distribution of the OS.  The platform-specific README
-files and installation instructions should list the required tools.
+Building Emacs on non-Posix platforms requires tools that aren't part of the standard distribution of the OS. 
+The platform-specific README files and installation instructions should list the required tools.
 
-
-NOTE ON COPYRIGHT YEARS
+** NOTE ON COPYRIGHT YEARS
 
 In copyright notices where the copyright holder is the Free Software
 Foundation, then where a range of years appears, this is an inclusive
 range that applies to every year in the range.  For example: 2005-2008
 represents the years 2005, 2006, 2007, and 2008.
 
-
-This file is part of GNU Emacs.
+** This file is part of GNU Emacs.
 
 GNU Emacs is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
